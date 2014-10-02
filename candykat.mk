@@ -16,7 +16,7 @@
 #
 
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/slim/config/gsm.mk)
+$(call inherit-product, vendor/candykat/config/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := p3100
@@ -26,14 +26,14 @@ TARGET_SCREEN_HEIGHT := 1024
 TARGET_SCREEN_WIDTH := 600
 
 # Inherit some common Slim stuff.
-$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+$(call inherit-product, vendor/candykat/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/p3100/full_p3100.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := p3100
-PRODUCT_NAME := slim_p3100
+PRODUCT_NAME := candykat_p3100
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-P3100
 PRODUCT_MANUFACTURER := samsung
